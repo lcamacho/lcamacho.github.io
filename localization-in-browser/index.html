@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -10,107 +10,181 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="shortcut icon" href="../assets/favicon.ico" />
 
-
-    <link rel="stylesheet" type="text/css" href="../assets/css/normalize.css?v=8a6c24daa2" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/foundation.min.css?v=8a6c24daa2" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/normalize.css?v=8a6c24daa2"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/foundation.min.css?v=8a6c24daa2"
+    />
     <!--[if lte IE 8]>
-        <link rel="stylesheet" type="text/css" href="/assets/css/outdatedBrowser.min.css?v=8a6c24daa2">
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="/assets/css/outdatedBrowser.min.css?v=8a6c24daa2"
+      />
     <![endif]-->
-    <link rel="stylesheet" type="text/css" href="../assets/fonts/foundation-icons/foundation-icons.css?v=8a6c24daa2" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/styles.css?v=8a6c24daa2" />
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,700,400|Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/fonts/foundation-icons/foundation-icons.css?v=8a6c24daa2"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/styles.css?v=8a6c24daa2"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,700,400|Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic"
+    />
 
-    <link rel="resource" type="application/l10n" href="../assets/locales/locales.ini?v=8a6c24daa2" />
+    <link
+      rel="resource"
+      type="application/l10n"
+      href="../assets/locales/locales.ini?v=8a6c24daa2"
+    />
 
-    <link rel="canonical" href="https://lcamacho.github.io/localization-in-browser/" />
-    
+    <link
+      rel="canonical"
+      href="https://lcamacho.github.io/localization-in-browser/"
+    />
+
     <meta property="og:site_name" content="Leonard Camacho blog" />
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Localization in browser and the es-419 case" />
-    <meta property="og:description" content="Trying to get this blog to adapt to user's language I struck with a couple of issues: Ghost, the blogging platform that I'm using doesn't have a way to create and use translations.   I can't detect on backend because this..." />
-    <meta property="og:url" content="https://lcamacho.github.io/localization-in-browser/" />
-    <meta property="article:published_time" content="2014-10-30T23:51:00.000Z" />
+    <meta
+      property="og:title"
+      content="Localization in browser and the es-419 case"
+    />
+    <meta
+      property="og:description"
+      content="Trying to get this blog to adapt to user's language I struck with a couple of issues: Ghost, the blogging platform that I'm using doesn't have a way to create and use translations.   I can't detect on backend because this..."
+    />
+    <meta
+      property="og:url"
+      content="https://lcamacho.github.io/localization-in-browser/"
+    />
+    <meta
+      property="article:published_time"
+      content="2014-10-30T23:51:00.000Z"
+    />
     <meta property="article:modified_time" content="2014-10-30T23:56:49.077Z" />
     <meta property="article:tag" content="localization" />
-    
+
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Localization in browser and the es-419 case" />
-    <meta name="twitter:description" content="Trying to get this blog to adapt to user's language I struck with a couple of issues: Ghost, the blogging platform that I'm using doesn't have a way to create and use translations.   I can't detect on backend because this..." />
-    <meta name="twitter:url" content="https://lcamacho.github.io/localization-in-browser/" />
-    
+    <meta
+      name="twitter:title"
+      content="Localization in browser and the es-419 case"
+    />
+    <meta
+      name="twitter:description"
+      content="Trying to get this blog to adapt to user's language I struck with a couple of issues: Ghost, the blogging platform that I'm using doesn't have a way to create and use translations.   I can't detect on backend because this..."
+    />
+    <meta
+      name="twitter:url"
+      content="https://lcamacho.github.io/localization-in-browser/"
+    />
+
     <script type="application/ld+json">
-{
-    "@context": "http://schema.org",
-    "@type": "Article",
-    "publisher": "Leonard Camacho blog",
-    "author": {
-        "@type": "Person",
-        "name": "Leonard Camacho",
-        "image": "https://lcamacho.github.io/content/images/2014/10/icon128-1.png",
-        "url": "https://lcamacho.github.io/author/leonard",
-        "sameAs": null
-    },
-    "headline": "Localization in browser and the es-419 case",
-    "url": "https://lcamacho.github.io/localization-in-browser/",
-    "datePublished": "2014-10-30T23:51:00.000Z",
-    "dateModified": "2014-10-30T23:56:49.077Z",
-    "keywords": "localization",
-    "description": "Trying to get this blog to adapt to user's language I struck with a couple of issues: Ghost, the blogging platform that I'm using doesn't have a way to create and use translations.   I can't detect on backend because this"
-}
+      {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "publisher": "Leonard Camacho blog",
+        "author": {
+          "@type": "Person",
+          "name": "Leonard Camacho",
+          "image": "https://lcamacho.github.io/content/images/2014/10/icon128-1.png",
+          "url": "https://lcamacho.github.io/author/leonard",
+          "sameAs": null
+        },
+        "headline": "Localization in browser and the es-419 case",
+        "url": "https://lcamacho.github.io/localization-in-browser/",
+        "datePublished": "2014-10-30T23:51:00.000Z",
+        "dateModified": "2014-10-30T23:56:49.077Z",
+        "keywords": "localization",
+        "description": "Trying to get this blog to adapt to user's language I struck with a couple of issues: Ghost, the blogging platform that I'm using doesn't have a way to create and use translations.   I can't detect on backend because this"
+      }
     </script>
 
     <meta name="generator" content="Ghost 0.5" />
-    <link rel="alternate" type="application/rss+xml" title="Leonard Camacho blog" href="../rss/index.html" />
-</head>
-<body class="post-template tag-localization">
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Leonard Camacho blog"
+      href="../rss/index.html"
+    />
 
-<div id="outdated">
-    <h6>Your browser is out-of-date!</h6>
-    <p>Update your browser to view this website correctly. <a id="btnUpdate" href="http://outdatedbrowser.com/">Update my browser now</a></p>
-</div>
+    <script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1597030062345622"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="post-template tag-localization">
+    <div id="outdated">
+      <h6>Your browser is out-of-date!</h6>
+      <p>
+        Update your browser to view this website correctly.
+        <a id="btnUpdate" href="http://outdatedbrowser.com/"
+          >Update my browser now</a
+        >
+      </p>
+    </div>
 
-<nav class="top-bar hide-for-large-up" data-topbar style="background: none">
-  <ul class="title-area">
-    <li class="name">
+    <nav class="top-bar hide-for-large-up" data-topbar style="background: none">
+      <ul class="title-area">
+        <li class="name"></li>
+        <li class="home"><a class="fi-home" href="../index.html"></a></li>
+        <!--  <li class="toggle-topbar"><a href="#" id="trigger-overlay" class="fi-list"></a></li> -->
+      </ul>
 
-    </li>
-    <li class="home"><a class="fi-home" href="../index.html"></a></li>
-   <!--  <li class="toggle-topbar"><a href="#" id="trigger-overlay" class="fi-list"></a></li> -->
-  </ul>
-
-<div class="overlay overlay-scale">
-    <button type="button" class="overlay-close" data-l10n-id="close">Close</button>
-    <nav>
-        <ul>
+      <div class="overlay overlay-scale">
+        <button type="button" class="overlay-close" data-l10n-id="close">
+          Close
+        </button>
+        <nav>
+          <ul>
             <li><a href="../index.html" data-l10n-id="home">Home</a></li>
             <!-- <li><a href="https://lcamacho.github.io/about">About</a></li>
             <li><a href="https://lcamacho.github.io/contact">Contact</a></li> -->
-        </ul>
+          </ul>
+        </nav>
+      </div>
     </nav>
-</div>
 
-</nav>
-
-<div class="row">
-
-<div class="small-16 medium-16 large-4 columns right head-area bgimage" style="background-image: url(../content/images/2014/Aug/Best-Iron-Man-3-Wallpaper-small-2.jpg)">
-
-<header class="site-head">
-    <div class="vertical">
-        <div class="site-head-content inner">
-            <ul class="side-nav blog-menu show-for-large-up">
+    <div class="row">
+      <div
+        class="small-16 medium-16 large-4 columns right head-area bgimage"
+        style="
+          background-image: url(../content/images/2014/Aug/Best-Iron-Man-3-Wallpaper-small-2.jpg);
+        "
+      >
+        <header class="site-head">
+          <div class="vertical">
+            <div class="site-head-content inner">
+              <ul class="side-nav blog-menu show-for-large-up">
                 <li><a class="fi-home" href="../index.html"></a></li>
                 <!-- <li><a class="fi-torso" href="https://lcamacho.github.io/about"></a></li>
                 <li><a class="fi-mail" href="https://lcamacho.github.io/contact"></a></li> -->
-            </ul>
-            <a class="blog-logo" href="../index.html"><img alt="Leonard Camacho blog" src="../content/images/2014/Aug/reactor_arc_thumbnail-4.png" width="96" height="96"/></a>
-            <h1 class="blog-title">Leonard Camacho blog</h1>
-            <hr>
-            <p class="blog-description">Mi espacio en internet</p>
-            <div class="blog-network">
-<!--                 <a href="#" class="fi-social-pinterest"></a>
+              </ul>
+              <a class="blog-logo" href="../index.html"
+                ><img
+                  alt="Leonard Camacho blog"
+                  src="../content/images/2014/Aug/reactor_arc_thumbnail-4.png"
+                  width="96"
+                  height="96"
+              /></a>
+              <h1 class="blog-title">Leonard Camacho blog</h1>
+              <hr />
+              <p class="blog-description">Mi espacio en internet</p>
+              <div class="blog-network">
+                <!--                 <a href="#" class="fi-social-pinterest"></a>
                 <a href="#" class="fi-social-linkedin"></a>
                 <a href="#" class="fi-social-behance"></a>
                 <a href="#" class="fi-social-deviant-art"></a>
@@ -126,116 +200,219 @@
                 <a href="#" class="fi-social-google-plus"></a>
                 <a href="#" class="fi-social-youtube"></a>
                 <a href="#" class="fi-social-facebook"></a> -->
-                <a href="https://github.com/lcamacho" class="fi-social-github"></a>
-                <a href="https://twitter.com/leonardcamacho" class="fi-social-twitter"></a>
+                <a
+                  href="https://github.com/lcamacho"
+                  class="fi-social-github"
+                ></a>
+                <a
+                  href="https://twitter.com/leonardcamacho"
+                  class="fi-social-twitter"
+                ></a>
+              </div>
             </div>
-        </div>
-    </div>
-</header>
+          </div>
+        </header>
+      </div>
 
-</div>
+      <div class="small-16 medium-16 large-12 columns main-column left">
+        <main class="content" role="main">
+          <article class="post tag-localization">
+            <h1 class="post-title">
+              Localization in browser and the es-419 case
+            </h1>
 
-
-<div class="small-16 medium-16 large-12 columns main-column left">
-    
-
-<main class="content" role="main">
-
-    <article class="post tag-localization">
-
-
-            <h1 class="post-title">Localization in browser and the es-419 case</h1>
-
-            <span class="post-meta label"><time datetime="2014-10-30">30 Oct 2014</time></span>
+            <span class="post-meta label"
+              ><time datetime="2014-10-30">30 Oct 2014</time></span
+            >
 
             <section class="post-content">
-                <p>Trying to get this blog to adapt to user's language I struck with a couple of issues:</p>
+              <p>
+                Trying to get this blog to adapt to user's language I struck
+                with a couple of issues:
+              </p>
 
-<ol>
-<li>Ghost, the blogging platform that I'm using doesn't have a way to create and use translations.  </li>
-<li>I can't detect on backend because this blog is on github pages.</li>
-</ol>
+              <ol>
+                <li>
+                  Ghost, the blogging platform that I'm using doesn't have a way
+                  to create and use translations.
+                </li>
+                <li>
+                  I can't detect on backend because this blog is on github
+                  pages.
+                </li>
+              </ol>
 
-<p>That means the only way is to use javascript to detect user's language and localize.</p>
+              <p>
+                That means the only way is to use javascript to detect user's
+                language and localize.
+              </p>
 
-<p>Luckly Mozilla faced this issue so they create the webl10n proyect and the way to use it is really simple: </p>
+              <p>
+                Luckly Mozilla faced this issue so they create the webl10n
+                proyect and the way to use it is really simple:
+              </p>
 
-<ul>
-<li>You have to create a locales.ini file, where you're going to indicate all the languages that you want to detect and the path to files where translations are located.</li>
-</ul>
+              <ul>
+                <li>
+                  You have to create a locales.ini file, where you're going to
+                  indicate all the languages that you want to detect and the
+                  path to files where translations are located.
+                </li>
+              </ul>
 
-<pre><code>@import url(es/app.properties)
+              <pre><code>@import url(es/app.properties)
 [en]
 @import url(en/app.properties)
 </code></pre>
 
-<ul>
-<li>Then create translation files, in this case app.properties, inside you need to write the phrase id and translation.</li>
-</ul>
+              <ul>
+                <li>
+                  Then create translation files, in this case app.properties,
+                  inside you need to write the phrase id and translation.
+                </li>
+              </ul>
 
-<pre><code class="        ">read-more = Leer más  
+              <pre><code class="        ">read-more = Leer más  
 share-it = ¿Te gusto el artículo? Compartelo.  
 </code></pre>
 
-<ul>
-<li>You've to add the library and the locales.ini file to page.</li>
-</ul>
+              <ul>
+                <li>
+                  You've to add the library and the locales.ini file to page.
+                </li>
+              </ul>
 
-<pre><code class="html        ">&lt;link rel="resource" type="application/l10n" href="locales/locales.ini"&gt;  
+              <pre><code class="html        ">&lt;link rel="resource" type="application/l10n" href="locales/locales.ini"&gt;  
 &lt;script type="text/javascript" src="js/l10n.js"&gt;  
 </code></pre>
 
-<ul>
-<li>Finally add phrase id to html using "data-l10n-id" attribute.</li>
-</ul>
+              <ul>
+                <li>
+                  Finally add phrase id to html using "data-l10n-id" attribute.
+                </li>
+              </ul>
 
-<pre><code class="html">&lt;h4 data-l10n-id="share-it"&gt;Liked this post ? Share it.&lt;/h4&gt;  
+              <pre><code class="html">&lt;h4 data-l10n-id="share-it"&gt;Liked this post ? Share it.&lt;/h4&gt;  
 </code></pre>
 
-<p>If you want more info about this library you can check the <a href="https://github.com/fabi1cazenave/webL10n">github repo</a> or you can also check the <a href="https://developer.mozilla.org/en-US/Apps/Build/Localization/Localizing_Open_Web_Apps">MDN page about localizing webapps</a>.</p>
+              <p>
+                If you want more info about this library you can check the
+                <a href="https://github.com/fabi1cazenave/webL10n"
+                  >github repo</a
+                >
+                or you can also check the
+                <a
+                  href="https://developer.mozilla.org/en-US/Apps/Build/Localization/Localizing_Open_Web_Apps"
+                  >MDN page about localizing webapps</a
+                >.
+              </p>
 
-<p>But even if this library is easy to use It doesn't mean is free of issues:</p>
+              <p>
+                But even if this library is easy to use It doesn't mean is free
+                of issues:
+              </p>
 
-<ul>
-<li><p>If user has javascript disabled (something really odd) or   using No Script translations would not work, that's why you should write by default in a language that almost everybody can understand(english).</p></li>
-<li><p>If you have a html element in the middle of a phrase like a link, webl10n is just going to replace text before link.</p>
+              <ul>
+                <li>
+                  <p>
+                    If user has javascript disabled (something really odd) or
+                    using No Script translations would not work, that's why you
+                    should write by default in a language that almost everybody
+                    can understand(english).
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    If you have a html element in the middle of a phrase like a
+                    link, webl10n is just going to replace text before link.
+                  </p>
 
-<p>In order to translate link text you have to add a different phrase id, the same applies to text after link where you also need to wrap it with a html tag.</p></li>
-</ul>
+                  <p>
+                    In order to translate link text you have to add a different
+                    phrase id, the same applies to text after link where you
+                    also need to wrap it with a html tag.
+                  </p>
+                </li>
+              </ul>
 
-<pre><code class="html">&lt;p data-l10n-id="first"&gt;First part of text &lt;a href="http://lcamacho.github.io" data-l10n-id="link"&gt;link to my blog&lt;/a&gt; &lt;span data-l10n-id="second"&gt; text after link&lt;/span&gt;&lt;/p&gt;  
+              <pre><code class="html">&lt;p data-l10n-id="first"&gt;First part of text &lt;a href="http://lcamacho.github.io" data-l10n-id="link"&gt;link to my blog&lt;/a&gt; &lt;span data-l10n-id="second"&gt; text after link&lt;/span&gt;&lt;/p&gt;  
 </code></pre>
 
-<h2 id="thees419casees419anamees419a"><a href="index.html#es-419">The es-419 case</a><a name="es-419"></a></h2>
+              <h2 id="thees419casees419anamees419a">
+                <a href="index.html#es-419">The es-419 case</a
+                ><a name="es-419"></a>
+              </h2>
 
-<p>With translations ready the last step was testing and It works on most browsers, the only two that came as suprise were Chrome and the new Opera that now is based on Chromium.</p>
+              <p>
+                With translations ready the last step was testing and It works
+                on most browsers, the only two that came as suprise were Chrome
+                and the new Opera that now is based on Chromium.
+              </p>
 
-<p>Both were showing english version instead of spanish even though I were using them in spanish, so to be sure about browser language I executed in console <code>navigator.language</code> just to see what returns.</p>
+              <p>
+                Both were showing english version instead of spanish even though
+                I were using them in spanish, so to be sure about browser
+                language I executed in console
+                <code>navigator.language</code> just to see what returns.
+              </p>
 
-<p><img src="../content/images/2014/10/Captura-de-pantalla-2014-10-30-a-las-16-19-32.png" alt="navigator.language returns es-419" /></p>
+              <p>
+                <img
+                  src="../content/images/2014/10/Captura-de-pantalla-2014-10-30-a-las-16-19-32.png"
+                  alt="navigator.language returns es-419"
+                />
+              </p>
 
-<p>That was akward to me because browsers like Firefox returns "es-AR" (language id - country id), but then I found on IANA that <a href="https://www.iana.org/assignments/lang-tags/es-419">"es-419" is the id for latin american spanish</a> something like a neutral spanish for latam (if such thing really exists, <a href="https://www.youtube.com/watch?v=4LjDe4sLER0">let's remember how hard it is to speak spanish</a>).</p>
+              <p>
+                That was akward to me because browsers like Firefox returns
+                "es-AR" (language id - country id), but then I found on IANA
+                that
+                <a href="https://www.iana.org/assignments/lang-tags/es-419"
+                  >"es-419" is the id for latin american spanish</a
+                >
+                something like a neutral spanish for latam (if such thing really
+                exists,
+                <a href="https://www.youtube.com/watch?v=4LjDe4sLER0"
+                  >let's remember how hard it is to speak spanish</a
+                >).
+              </p>
 
-<p>To make webl10n work with this language you need to add a couple of lines to locales.ini, first <code>[es-419]</code> and then the line to indicate the path to spanish translation file, but to avoid this I sended a <a href="https://github.com/fabi1cazenave/webL10n/pull/47">pull request</a> to allow webl10n to recognize language ids that contains numbers and redirect to base language, like in this case to be redirected to <code>[es]</code> translations.</p>
-                        <aside class="tags fi-pricetag-multiple">Posted on <a href="../tag/localization/index.html">localization</a></aside>
+              <p>
+                To make webl10n work with this language you need to add a couple
+                of lines to locales.ini, first <code>[es-419]</code> and then
+                the line to indicate the path to spanish translation file, but
+                to avoid this I sended a
+                <a href="https://github.com/fabi1cazenave/webL10n/pull/47"
+                  >pull request</a
+                >
+                to allow webl10n to recognize language ids that contains numbers
+                and redirect to base language, like in this case to be
+                redirected to <code>[es]</code> translations.
+              </p>
+              <aside class="tags fi-pricetag-multiple">
+                Posted on
+                <a href="../tag/localization/index.html">localization</a>
+              </aside>
             </section>
-            <hr>
+            <hr />
             <footer class="post-footer">
+              <section class="share">
+                <h4 data-l10n-id="share-it">Liked this post ? Share it.</h4>
+                <a
+                  class="fi-social-facebook"
+                  href="https://www.facebook.com/sharer/sharer.php?u=https://lcamacho.github.io/localization-in-browser/"
+                  onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;"
+                >
+                </a>
+                <a
+                  class="fi-social-twitter"
+                  href="https://twitter.com/share?text=Localization%20in%20browser%20and%20the%20es-419%20case&amp;url=https://lcamacho.github.io/localization-in-browser/"
+                  onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;"
+                >
+                </a>
+              </section>
 
-                <section class="share">
-                    <h4 data-l10n-id="share-it">Liked this post ? Share it.</h4>
-                    <a class="fi-social-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://lcamacho.github.io/localization-in-browser/"
-                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    </a>
-                    <a class="fi-social-twitter" href="https://twitter.com/share?text=Localization%20in%20browser%20and%20the%20es-419%20case&amp;url=https://lcamacho.github.io/localization-in-browser/"
-                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    </a>
-                    <a class="fi-social-google-plus" href="https://plus.google.com/share?url=https://lcamacho.github.io/localization-in-browser/"
-                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    </a>
-                </section>
-
-                <!-- <section class="author">
+              <!-- <section class="author">
                     <header>
                         <span>About the author</span>
                     </header>
@@ -250,89 +427,140 @@ share-it = ¿Te gusto el artículo? Compartelo.
                     </footer>
                 </section> -->
 
-        <div class="clearfix"></div>
-                    <hr>
-
+              <div class="clearfix"></div>
+              <hr />
             </footer>
 
-        <!-- github -->
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-1597030062345622"
-             data-ad-slot="9442663192"
-             data-ad-format="auto"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+            <h3 class="title-disqus">
+              <span class="fi-comments"></span
+              ><span data-l10n-id="discussions">Discussions</span>
+            </h3>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+              var disqus_shortname = "leonardcamachoblog"; // required: replace example with your forum shortname
+              var disqus_identifier = "10"; // make sure to use the post.id as an identifier, otherwise disqus will use the pages url per default, which might be problematic...
+              var disqus_config;
 
-        <h3 class="title-disqus"><span class="fi-comments"></span><span data-l10n-id="discussions">Discussions</span></h3>
-        <div id="disqus_thread"></div>
-<script type="text/javascript">
-    var disqus_shortname = 'leonardcamachoblog'; // required: replace example with your forum shortname
-    var disqus_identifier = '10'; // make sure to use the post.id as an identifier, otherwise disqus will use the pages url per default, which might be problematic...
-    var disqus_config;
+              window.addEventListener(
+                "localized",
+                function () {
+                  if (
+                    "es" ===
+                    document.webL10n.getLanguage().replace(/-[a-z0-9]+$/i, "")
+                  ) {
+                    disqus_config = function () {
+                      this.language = "es_MX";
+                    };
+                  }
 
-    window.addEventListener('localized', function() {
-
-        if ('es' === document.webL10n.getLanguage().replace(/-[a-z0-9]+$/i, '')) {
-            disqus_config = function () {
-                this.language = 'es_MX';
-            };
-        }
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    }, false);
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-
-    </article>
-
-</main>
-
-</div>
-
-</div>
+                  /* * * DON'T EDIT BELOW THIS LINE * * */
+                  (function () {
+                    var dsq = document.createElement("script");
+                    dsq.type = "text/javascript";
+                    dsq.async = true;
+                    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+                    (
+                      document.getElementsByTagName("head")[0] ||
+                      document.getElementsByTagName("body")[0]
+                    ).appendChild(dsq);
+                  })();
+                },
+                false
+              );
+            </script>
+            <noscript
+              >Please enable JavaScript to view the
+              <a href="http://disqus.com/?ref_noscript"
+                >comments powered by Disqus.</a
+              ></noscript
+            >
+            <a href="http://disqus.com" class="dsq-brlink"
+              >comments powered by <span class="logo-disqus">Disqus</span></a
+            >
+          </article>
+        </main>
+      </div>
+    </div>
 
     <script src="../public/jquery.min.js?v=8a6c24daa2"></script>
 
     <!--[if lte IE 8]>
-        <script type="text/javascript" src="/assets/js/outdatedBrowser.min.js?v=8a6c24daa2"></script>
+      <script
+        type="text/javascript"
+        src="/assets/js/outdatedBrowser.min.js?v=8a6c24daa2"
+      ></script>
     <![endif]-->
-    <script type="text/javascript" src="../assets/js/vendor/fastclick.js?v=8a6c24daa2"></script>
-    <script type="text/javascript" src="../assets/js/vendor/modernizr.js?v=8a6c24daa2"></script>
-    <script type="text/javascript" src="../assets/js/l10n.min.js?v=8a6c24daa2"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/vendor/fastclick.js?v=8a6c24daa2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/vendor/modernizr.js?v=8a6c24daa2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/l10n.min.js?v=8a6c24daa2"
+    ></script>
 
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=8a6c24daa2"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=8a6c24daa2"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/jquery.fitvids.js?v=8a6c24daa2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/index.js?v=8a6c24daa2"
+    ></script>
 
-    <script type="text/javascript" src="../assets/js/foundation.min.js?v=8a6c24daa2"></script>
-    <script type="text/javascript" src="../assets/js/overlay/snap.svg-min.js?v=8a6c24daa2"></script>
-    <script type="text/javascript" src="../assets/js/overlay/classie.js?v=8a6c24daa2"></script>
-    <script type="text/javascript" src="../assets/js/overlay/demo1.js?v=8a6c24daa2"></script>
-    <script type="text/javascript" src="../assets/js/vendor/smoothscroll.js?v=8a6c24daa2"></script>
-
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/foundation.min.js?v=8a6c24daa2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/overlay/snap.svg-min.js?v=8a6c24daa2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/overlay/classie.js?v=8a6c24daa2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/overlay/demo1.js?v=8a6c24daa2"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../assets/js/vendor/smoothscroll.js?v=8a6c24daa2"
+    ></script>
 
     <script>
       $(document).foundation();
     </script>
 
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
-      ga('create', 'UA-56295147-1', 'auto');
-      ga('require', 'displayfeatures');
-      ga('send', 'pageview');
-
+      ga("create", "UA-56295147-1", "auto");
+      ga("require", "displayfeatures");
+      ga("send", "pageview");
     </script>
-</body>
+  </body>
 </html>
