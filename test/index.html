@@ -24,14 +24,12 @@
         $('a.login').click((e) => {
             e.preventDefault();
             gtag("event", "login", {
-                debug_mode: true,
                 method: "test"
             });
         });
         $('a.custom').click((e) => {
             e.preventDefault();
             gtag("event", "custom", {
-                debug_mode: true,
                 data: "test",
                 info: "test",
             });
@@ -39,7 +37,6 @@
         $('a.custom2').click((e) => {
             e.preventDefault();
             gtag("event", "custom", {
-                debug_mode: true,
                 data: "test",
                 info: "test2",
             });
