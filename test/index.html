@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ga4 test</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-NGCRX4YCZM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-NGCRX4YCZM');
+    </script>
+</head>
+<body>
+    <p>to test <a href="#" class="login">login event</a></p>
+    <p>test <a href="#" class="custom">custom event</a></p>
+    <p>test <a href="#" class="custom2">custom event</a></p>
+    <script>
+        $('a.login').click((e) => {
+            e.preventDefault();
+            gtag("event", "login", {
+                method: "test"
+            });
+        });
+        $('a.custom').click((e) => {
+            e.preventDefault();
+            gtag("event", "custom", {
+                data: "test",
+                info: "test",
+            });
+        });
+        $('a.custom2').click((e) => {
+            e.preventDefault();
+            gtag("event", "custom", {
+                data: "test",
+                info: "test2",
+            });
+        });
+    </script>
+</body>
+</html>
