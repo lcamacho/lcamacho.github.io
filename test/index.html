@@ -11,9 +11,15 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        gtag('js', new Date());
 
-      gtag('config', 'G-NGCRX4YCZM');
+        gtag('config', 'G-NGCRX4YCZM', {
+            page_title : 'test page',
+            page_location: document.URL,
+            track_page_title: 'test page',
+            track_page_location : document.URL,
+        });
+
     </script>
 </head>
 <body>
@@ -24,21 +30,22 @@
         $('a.login').click((e) => {
             e.preventDefault();
             gtag("event", "login", {
-                method: "test"
+                method: "test",
+                track_method: "test"
             });
         });
         $('a.custom').click((e) => {
             e.preventDefault();
             gtag("event", "custom", {
-                data: "test",
                 info: "test",
+                track_data: "form",
             });
         });
         $('a.custom2').click((e) => {
             e.preventDefault();
             gtag("event", "custom", {
-                data: "test",
                 info: "test2",
+                track_data: "form 2"
             });
         });
     </script>
